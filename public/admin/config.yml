@@ -2,7 +2,7 @@ backend:
   name: git-gateway
   branch: main
   media_folder: "public/assets/fotos"
-  public_folder: "assets/fotos"
+  public_folder: "/assets/fotos"
   collections:
   - name: "produto"
     label: "Produto"
@@ -16,3 +16,4 @@ backend:
       - { lable: "Preço", name: "preco", widget: "number" }
       - { lable: "Foto", name: "fotoProd", widget: "image" }
       - { lable: "Body", name: "body", widget: "markdown" }
+
