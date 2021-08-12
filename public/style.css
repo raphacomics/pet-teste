@@ -39,3 +39,33 @@ html, body{
     margin: auto;
 
 }
+
+.prod-single{
+    display: flex;
+
+}
+
+.foto{
+    height: 200px;
+    box-sizing: border-box;
+    overflow: hidden;
+
+    
+}
+
+.foto-single img{
+    margin-right: 2rem;
+}
+
+.foto-single img{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+img{
+    width: 100%;
+    
+}

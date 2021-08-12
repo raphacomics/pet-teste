@@ -12,8 +12,11 @@ layout: 'base.njk'
             {%- for prods in collections.prods -%}
 
                 <div class="produto-card">
+                    <div class="foto">
+                        <img src="{{ prods.data.fotoProd }}" alt="">
+                    </div>
                     <h1>{{ prods.data.nome }}</h1>
-                    <span>{{ prods.data.preco }}</span>
+                    <span>R$ {{ prods.data.preco }}</span>
                     <p>{{ prods.data.descricao }}</p>
                    <button><a href="{{ prods.url }}"> Comprar </a></button>
                 </div>

@@ -7,6 +7,9 @@
     <title>PraPet Teste</title>
 
     <link rel="stylesheet" href="/style.css">
+
+    <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
 </head>
 <body>
     <div class="header">  
@@ -22,11 +25,17 @@
         <h1>Produtos</h1>
         
         <div class="prod-list"><div class="produto-card">
+                    <div class="foto">
+                        <img src="/assets/fotos/dog06.jpg" alt="">
+                    </div>
                     <h1>Cama 01</h1>
                     <span>R$ 100</span>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec semper tristique consequat. Sed accumsan lectus sit amet hendrerit feugiat.</p>
                    <button><a href="/produtos/cama01/"> Comprar </a></button>
                 </div><div class="produto-card">
+                    <div class="foto">
+                        <img src="/assets/fotos/dog08.jpg" alt="">
+                    </div>
                     <h1>Cama 02</h1>
                     <span>R$ 50</span>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec semper tristique consequat. Sed accumsan lectus sit amet hendrerit feugiat.</p>
@@ -35,6 +44,21 @@
 
     </div>
 
+
+
+
+
+    <script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
 
 </body>
 </html>

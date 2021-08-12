@@ -4,12 +4,21 @@ layout: 'base.njk'
 ---
 
 <div class="container">
-<h1>{{ nome }}</h1>
-<p>{{ descricao }}</p>
-<hr>
-<h3>{{ preco }}</h3>
+    <div class="prod-single">
+        <div class="foto-single">
+            <img src="{{ fotoProd }}" />
+        </div>
 
-{{ content | safe }}
+        <div>
+        <h1>{{ nome }}</h1>
+        <p>{{ descricao }}</p>
+        {{ content | safe }}
+        <hr>
+        <h3>R$ {{ preco }}</h3>
+        <button><a href="#">Comprar</a></button>
 
+        
+        </div>
+    </div>
 </div>
 
