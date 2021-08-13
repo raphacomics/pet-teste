@@ -4,16 +4,16 @@ backend:
   media_folder: "public/assets/fotos"
   public_folder: "/assets/fotos"
   collections:
-  - name: "produto"
-    label: "Produto"
-    folder: "src/produtos"
-    create: true
-    slug: "{{slug}}"
-    fields: 
-      - { lable: "Nome Produto", name: "nome", widget: "string" }
-      - { lable: "Tags", name: "tags", widget: "list", default: ["prods"] }
-      - { lable: "Descricao", name: "descricao", widget: "string" }
-      - { lable: "Preço", name: "preco", widget: "number" }
-      - { lable: "Foto", name: "fotoProd", widget: "image" }
-      - { lable: "Body", name: "body", widget: "markdown" }
+    - name: "blog"
+      label: "Blog"
+      folder: "src/produtos"
+      create: true
+      slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+      fields: 
+        - { lable: "Nome Produto", name: "nome", widget: "string" }
+        - { lable: "Tags", name: "tags", widget: "list", default: ["prods"] }
+        - { lable: "Descricao", name: "descricao", widget: "string" }
+        - { lable: "Preço", name: "preco", widget: "number" }
+        - { lable: "Foto", name: "fotoProd", widget: "image" }
+        - { lable: "Body", name: "body", widget: "markdown" }
 
