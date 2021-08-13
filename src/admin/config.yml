@@ -19,7 +19,7 @@ collections:
       - { lable: "Descricao", name: "descricao", widget: "string" }
       - { lable: "Preço", name: "preco", widget: "number" }
       - { lable: "Foto", name: "fotoProd", widget: "image" }
-      - { label: "slug", name: "nome", widget: "string" }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
       - { lable: "Tags", name: "tags", widget: "list", default: ["prods"] }
         
 
