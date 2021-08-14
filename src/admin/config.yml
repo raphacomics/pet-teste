@@ -4,6 +4,7 @@ backend:
   repo: raphacomics/pet-teste
 
 
+
 media_folder: "public/assets/fotos"
 public_folder: "/assets/fotos"
 
