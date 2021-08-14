@@ -14,7 +14,11 @@ collections:
     label: "Produtos"
     folder: "src/produtos"
     create: true
+<<<<<<< HEAD
     slug: "{{slug}}"
+=======
+    slug: "{{nome}}"
+>>>>>>> 736c16fb95889adfa99441dc29a3104f7ac92e83
     fields: 
       - { lable: "Nome Produto", name: "nome", widget: "string" }
       - { lable: "Descricao", name: "descricao", widget: "string" }
