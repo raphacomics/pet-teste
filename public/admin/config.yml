@@ -1,11 +1,11 @@
 backend:
   name: git-gateway
   branch: main
+  repo: raphacomics/pet-teste
 
 
 media_folder: "public/assets/fotos"
 public_folder: "/assets/fotos"
-
 
 
 collections:
@@ -13,7 +13,7 @@ collections:
     label: "Produtos"
     folder: "src/produtos"
     create: true
-    slug: "{{slug}}"
+    slug: "{{nome}}"
     fields: 
       - { lable: "Nome Produto", name: "nome", widget: "string" }
       - { lable: "Descricao", name: "descricao", widget: "string" }
