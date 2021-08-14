@@ -1,7 +1,8 @@
 backend:
   name: git-gateway
-  branch: main
   repo: raphacomics/pet-teste
+  branch: main
+
 
 
 
