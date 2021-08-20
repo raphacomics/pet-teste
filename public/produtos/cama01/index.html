@@ -4,14 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ title }}</title>
+    <title>PraPet Teste</title>
     <link rel="stylesheet" href="/bootstrap.min.css">
     <link rel="stylesheet" href="/main.css">
     <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   </head>
   <body>
     
-    {{ content | safe }}
+    
+<div class="container">
+    <div class="prod-single">
+        <div class="foto-single">
+            <img src="/assets/fotos/dog06.jpg" />
+        </div>
+
+        <div>
+        <h1>Cama 01</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec semper tristique consequat. Sed accumsan lectus sit amet hendrerit feugiat.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec semper tristique consequat. Sed accumsan lectus sit amet hendrerit feugiat.</p>
+
+        <hr>
+        <h3>R$ 100</h3>
+        <button><a href="#">Comprar</a></button>
+
+        
+        </div>
+    </div>
+</div>
+
+
     <script>
       if (window.netlifyIdentity) {
         window.netlifyIdentity.on("init", user => {

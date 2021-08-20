@@ -1,0 +1,65 @@
+html, body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    
+
+}
+
+
+
+
+.prod-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.produto-card{
+    padding: 8px;
+    border: solid 1px lightgrey;
+    width: 300px;
+    margin-right: 1rem;
+}
+
+
+
+.header-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+    margin: auto;
+
+}
+
+.prod-single{
+    display: flex;
+
+}
+
+.foto{
+    height: 200px;
+    box-sizing: border-box;
+    overflow: hidden;
+
+    
+}
+
+.foto-single img{
+    margin-right: 2rem;
+}
+
+.foto-single img{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+img{
+    width: 100%;
+    
+}

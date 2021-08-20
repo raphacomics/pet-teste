@@ -2,26 +2,13 @@
 title: PraPet Teste
 layout: 'base.njk'
 ---
+
+    {% include 'hero.njk' %}
+
+    {% include 'how-works.njk' %}
+
+    {% include 'produtos.njk' %}
     
 
-    <div class="container">
-        <h1>Produtos</h1>
-        
-        <div class="prod-list">
- 
-            {%- for prods in collections.prods -%}
 
-                <div class="produto-card">
-                    <div class="foto">
-                        <img src="{{ prods.data.fotoProd }}" alt="">
-                    </div>
-                    <h1>{{ prods.data.nome }}</h1>
-                    <span>R$ {{ prods.data.preco }}</span>
-                    <p>{{ prods.data.descricao }}</p>
-                   <button><a href="{{ prods.url }}"> Comprar </a></button>
-                </div>
-            {%- endfor -%}
-    </div>
-
-    </div>
 
