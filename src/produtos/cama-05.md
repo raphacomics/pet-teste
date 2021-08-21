@@ -2,7 +2,7 @@
 nome: Cama05
 descricao: "lorem "
 preco: 300
-fotoProd: /assets/fotos/img_20201026_150905.jpg
+fotoProd: /assets/fotos/dog04.jpg
 tags:
   - prods
 ---
