@@ -54,13 +54,6 @@ html, body {
       flex-wrap: wrap;
 }
 
-.produto-card {
-  padding: 8px;
-  border: solid 1px lightgrey;
-  width: 300px;
-  margin-right: 1rem;
-}
-
 .header-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -83,13 +76,6 @@ html, body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.foto {
-  height: 200px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  overflow: hidden;
 }
 
 .foto-single img {
@@ -274,4 +260,64 @@ img {
 .hw-step p {
   margin: 0;
   font-size: large;
+}
+
+.prod-list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 40px;
+}
+
+.prod-list a {
+  text-decoration: none;
+  color: black;
+}
+
+.produto-card {
+  border-radius: 1rem;
+  width: 300px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow: hidden;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.produto-card .card-info {
+  width: 100%;
+  padding: 1rem;
+  position: relative;
+}
+
+.produto-card .card-info .card-title {
+  color: #0267ba;
+  font-weight: bolder;
+}
+
+.produto-card .card-info p {
+  font-size: small;
+  line-height: 18px;
+  color: gray;
+  margin-top: 0.5rem;
+}
+
+.foto {
+  height: 200px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.foto img {
+  -o-object-fit: cover;
+     object-fit: cover;
 }

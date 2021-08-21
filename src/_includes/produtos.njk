@@ -1,21 +1,32 @@
 <div class="container">
+    <h1>Produtos</h1>
+    <div class="prod-list">
+        {%- for prods in collections.prods -%}
+            
+                <div class="produto-card d-flex flex-column ">
+                    
+                        <div class="foto">
+                            <img src="{{ prods.data.fotoProd }}" alt="">
+                        </div>
+                        
+                        <div class="card-info d-flex flex-column justify-content-between flex-grow-1">
+                            <div>
+                                <a href="{{ prods.url }}">
+                                    <h4 class="card-title">{{ prods.data.nome }}</h4>
+                                    <span>R$ {{ prods.data.preco }}</span>
+                                    <p>{{ prods.data.descricao }}</p>
+                                </a>
+                            </div>
 
-    div.
-        <h1>Produtos</h1>
-        
-        <div class="prod-list d-flex">
- 
-            {%- for prods in collections.prods -%}
-                <a href="{{ prods.url }}">
-                <div class="produto-card">
-                    <div class="foto">
-                        <img src="{{ prods.data.fotoProd }}" alt="">
-                    </div>
-                    <h1>{{ prods.data.nome }}</h1>
-                    <span>R$ {{ prods.data.preco }}</span>
-                    <p>{{ prods.data.descricao }}</p>
-                   <button><a href="{{ prods.url }}"> Comprar </a></button>
+                            <button class="btn b-yellow comprar mt-auto">
+                                <a href="{{ prods.url }}">Comprar</a>
+                            </button>
+
+                        </div>    
+  
                 </div>
-                </a>
-            {%- endfor -%}
+            
+
+        {%- endfor -%}
     </div>
+</div>

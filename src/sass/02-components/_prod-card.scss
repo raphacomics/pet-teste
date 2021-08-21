@@ -1,0 +1,56 @@
+.prod-list{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 40px;
+
+    a{
+        text-decoration: none;
+        color: black;
+    }
+}
+
+.produto-card{
+    //padding: 1rem;
+    border-radius: 1rem;
+    //border: solid 1px lightgrey;
+    width: 300px;
+    box-sizing: border-box;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+
+    .card-info{
+        width: 100%;
+        
+        padding: 1rem;
+        position: relative;
+    
+        .card-title{
+            color: $primary;
+            font-weight: bolder;
+        }
+    
+        p{
+            font-size: small;
+            line-height: 18px;
+            color: gray;
+            margin-top: 0.5rem;
+        }
+    }
+    
+   
+}
+
+.foto{
+    height: 200px;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+
+    img{
+        object-fit: cover;
+    }
+    
+}
+
