@@ -1,5 +1,5 @@
 ---
-nome: Teste01
+nome: Cama pet Conforto
 descricao: testetestestrtrte
 preco: 300
 fotoProd: /assets/fotos/dog08.jpg
