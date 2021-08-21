@@ -19,6 +19,7 @@ collections:
     fields: 
       - { lable: "Nome Produto", name: "nome", widget: "string" }
       - { lable: "Descricao", name: "descricao", widget: "string" }
+      - { lable: "Categoria", name: "categoria", widget: "list" }
       - { lable: "Preço", name: "preco", widget: "number" }
       - { lable: "Foto", name: "fotoProd", widget: "image" }
       - { label: 'Body', name: 'body', widget: 'markdown' }
