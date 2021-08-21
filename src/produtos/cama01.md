@@ -1,5 +1,5 @@
 ---
-nome: Cama 01
+nome: Cama com babados
 descricao: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec semper
   tristique.
 preco: 100
