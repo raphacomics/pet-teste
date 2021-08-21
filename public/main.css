@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Material+Icons");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 .material-icons {
   font-family: "Material Icons";
   font-weight: normal;
@@ -29,7 +29,7 @@ html {
 }
 
 body {
-  font-family: "ABeeZee", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   line-height: normal;
   color: black;
 }
