@@ -105,8 +105,7 @@ img {
 }
 
 .b-yellow:hover {
-  -webkit-filter: saturate(150%);
-          filter: saturate(150%);
+  background-color: #f7992e;
 }
 
 .hero {
@@ -254,8 +253,9 @@ img {
   display: grid;
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
-  grid-column-gap: 20px;
+  grid-column-gap: 24px;
   grid-row-gap: 40px;
+  justify-items: stretch;
 }
 
 .prod-list a {
@@ -263,10 +263,11 @@ img {
   color: black;
 }
 
-.produto-card {
+.prod-link .produto-card {
   background-color: white;
   border-radius: 1rem;
   width: 300px;
+  height: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   overflow: hidden;
@@ -274,37 +275,9 @@ img {
           box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
 
-.produto-card .card-info {
-  width: 100%;
-  padding: 1rem;
-  position: relative;
-}
-
-.produto-card .card-info .card-title {
-  color: #0267ba;
-  font-weight: bolder;
-  margin-bottom: 0;
-}
-
-.produto-card .card-info .preco {
-  font-size: large;
-  font-weight: bolder;
-}
-
-.produto-card .card-info .preco::before {
-  font-size: small;
-  content: 'R$';
-  color: gray;
-}
-
-.produto-card .card-info .categorias {
-  font-size: small;
-  line-height: 18px;
-  color: gray;
-}
-
-.foto {
+.prod-link .produto-card .foto {
   height: 200px;
+  width: auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   overflow: hidden;
@@ -316,13 +289,77 @@ img {
           justify-content: center;
 }
 
-.foto img {
+.prod-link .produto-card .foto img {
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.prod-link .produto-card .card-info {
+  width: 100%;
+  padding: 1.5rem;
+  position: relative;
+}
+
+.prod-link .produto-card .card-info .card-title {
+  color: #0267ba;
+  font-weight: bolder;
+  margin-bottom: 0;
+  font-size: 1.2rem;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.prod-link .produto-card .card-info .card-title::after {
+  content: '';
+  margin: 0.5rem 0;
+  width: 50px;
+  height: 1px;
+  display: block;
+  background-color: lightgray;
+}
+
+.prod-link .produto-card .card-info .preco {
+  font-size: 1.625rem;
+  font-weight: bolder;
+}
+
+.prod-link .produto-card .card-info .preco::before {
+  font-size: small;
+  content: 'R$';
+  color: gray;
+}
+
+.prod-link .produto-card .card-info .comprar {
+  width: 100%;
+}
+
+.prod-link .produto-card .card-info .descricao {
+  position: relative;
+  font-size: small;
+  line-height: 18px;
+  color: gray;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow: hidden;
+  max-height: 36px;
+  margin-bottom: 0;
+}
+
+.prod-link:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.prod-link:hover .card-info .card-title {
+  color: black;
 }
 
 .produtos {
-  background-color: rgba(173, 216, 230, 0.3);
+  background-color: #ceeaf5;
 }
 
 .prod-intro {
@@ -343,16 +380,4 @@ img {
   height: 4px;
   background-color: #ffcc36;
   display: block;
-}
-
-.prod-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
