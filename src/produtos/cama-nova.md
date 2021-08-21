@@ -8,6 +8,8 @@ categoria:
   - cama
   - acessorios
   - cães
+  - teste
+  - teste2
 preco: 200
 fotoProd: /assets/fotos/akira.jpg
 tags:
