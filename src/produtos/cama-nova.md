@@ -1,5 +1,5 @@
 ---
-nome: Cama Nova
+nome: Bolsa de Transporte Sling
 descricao: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
   lobortis tempus dui, ut tempus sem sodales et. Sed euismod, dolor a malesuada
   mollis, odio est porttitor metus, vel iaculis sapien dui ultricies erat.
