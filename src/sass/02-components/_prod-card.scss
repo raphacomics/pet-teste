@@ -11,6 +11,7 @@
 }
 
 .produto-card{
+    background-color: white;
     //padding: 1rem;
     border-radius: 1rem;
     //border: solid 1px lightgrey;
@@ -28,13 +29,24 @@
         .card-title{
             color: $primary;
             font-weight: bolder;
+            margin-bottom: 0;
+        }
+
+        .preco{
+            font-size: large;
+            font-weight: bolder;
+            &::before{
+                font-size: small;
+                content: 'R$';
+                color: gray;
+            }
         }
     
-        p{
+        .categorias{
             font-size: small;
             line-height: 18px;
             color: gray;
-            margin-top: 0.5rem;
+            
         }
     }
     

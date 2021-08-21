@@ -42,18 +42,6 @@ html, body {
   overflow-x: hidden;
 }
 
-.prod-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
 .header-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -210,7 +198,6 @@ img {
 
 .hw {
   padding: 2rem 0;
-  background-color: rgba(173, 216, 230, 0.3);
   text-align: center;
 }
 
@@ -277,6 +264,7 @@ img {
 }
 
 .produto-card {
+  background-color: white;
   border-radius: 1rem;
   width: 300px;
   -webkit-box-sizing: border-box;
@@ -295,13 +283,24 @@ img {
 .produto-card .card-info .card-title {
   color: #0267ba;
   font-weight: bolder;
+  margin-bottom: 0;
 }
 
-.produto-card .card-info p {
+.produto-card .card-info .preco {
+  font-size: large;
+  font-weight: bolder;
+}
+
+.produto-card .card-info .preco::before {
+  font-size: small;
+  content: 'R$';
+  color: gray;
+}
+
+.produto-card .card-info .categorias {
   font-size: small;
   line-height: 18px;
   color: gray;
-  margin-top: 0.5rem;
 }
 
 .foto {
@@ -320,4 +319,40 @@ img {
 .foto img {
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.produtos {
+  background-color: rgba(173, 216, 230, 0.3);
+}
+
+.prod-intro {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.prod-intro h2 {
+  color: #0267ba;
+  font-weight: bolder;
+}
+
+.prod-intro h2::after {
+  content: '';
+  margin-top: 0.5rem;
+  width: 100px;
+  margin: auto;
+  height: 4px;
+  background-color: #ffcc36;
+  display: block;
+}
+
+.prod-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }

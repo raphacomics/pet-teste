@@ -1,32 +1,33 @@
-<div class="container">
-    <h1>Produtos</h1>
-    <div class="prod-list">
-        {%- for prods in collections.prods -%}
-            
+<div class="container-fluid produtos">
+    <div class="container pt-5 ">
+
+        <div class="prod-intro">
+            <span>Qualidade Aprovada</span>
+            <h2>Produtos PraPet</h2>
+        </div>
+
+        <div class="prod-list">
+            {%- for prods in collections.prods -%}
+            <a class="prod-link" href="{{ prods.url }}">
                 <div class="produto-card d-flex flex-column ">
-                    
-                        <div class="foto">
-                            <img src="{{ prods.data.fotoProd }}" alt="">
+                    <div class="foto">
+                        <img src="{{ prods.data.fotoProd }}" alt="">
+                    </div>
+
+                    <div class="card-info d-flex flex-column justify-content-between flex-grow-1">
+                        <div class="mb-4">
+                                <h4 class="card-title">{{ prods.data.nome }}</h4>
+                                <p class="categorias">{{ prods.data.categoria }}</p>
+                                <span class="preco" >{{ prods.data.preco }}</span>
                         </div>
-                        
-                        <div class="card-info d-flex flex-column justify-content-between flex-grow-1">
-                            <div class="mb-4">
-                                <a href="{{ prods.url }}">
-                                    <h4 class="card-title">{{ prods.data.nome }}</h4>
-                                    <span>R$ {{ prods.data.preco }}</span>
-                                    <!-- <p>{{ prods.data.descricao }}</p> -->
-                                </a>
-                            </div>
-
-                            <button class="btn b-yellow comprar mt-auto">
-                                <a href="{{ prods.url }}">Comprar</a>
-                            </button>
-
-                        </div>    
-  
+                            
+                        <button class="btn b-yellow comprar mt-auto">
+                            Comprar
+                        </button>
+                    </div>
                 </div>
-            
-
-        {%- endfor -%}
+            </a>
+            {%- endfor -%}
+        </div>
     </div>
 </div>
