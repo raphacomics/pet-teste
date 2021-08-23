@@ -15,11 +15,11 @@ layout: 'base.njk'
             <h3 class="single-preco">{{ preco }}</h3>
             <hr>
             <div>
-                <h5>{opcaoNome}</h5>
+                <h5>{{opcaoNome}}</h5>
                 
                     <select>
                         {% for opcoes in collections.prods.opcoes %}
-                        <option value="{opcoes}"></option>
+                        <option value="{{opcoes}}">{{opcoes}}</option>
                         {%- endfor -%}
                     </select>
                 
