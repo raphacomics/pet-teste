@@ -2,23 +2,30 @@
 title: PraPet Teste
 layout: 'base.njk'
 ---
+{% include 'nav.njk' %}
 
-<div class="container">
-    <div class="prod-single">
-        <div class="foto-single">
+<div class="container my-5">
+    <div class="prod-single row">
+        <div class="foto-single col-5">
             <img src="{{ fotoProd }}" />
         </div>
 
-        <div>
-        <h1>{{ nome }}</h1>
-        <p>{{ descricao }}</p>
-        {{ content | safe }}
-        <hr>
-        <h3>R$ {{ preco }}</h3>
-        <button><a href="#">Comprar</a></button>
-
-        
+        <div class="col-7">
+            <h1>{{ nome }}</h1>
+            <h3 class="single-preco">{{ preco }}</h3>
+            <hr>
+            <div class='single-desc my-4'>
+                <h4>Descrição</h4>
+                <p>{{ descricao }}</p>
+            </div>
+            
+            {{ content | safe }}
+            <hr>
+            
+            <button><a href="#">Comprar</a></button>
         </div>
     </div>
+    
 </div>
 
+{% include 'produtos.njk' %}

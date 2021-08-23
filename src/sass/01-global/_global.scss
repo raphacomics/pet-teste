@@ -9,11 +9,6 @@ html, body{
 
 
 
-
-
-
-
-
 .header-container{
     display: flex;
     flex-direction: row;
@@ -22,25 +17,6 @@ html, body{
     width: 1200px;
     margin: auto;
 
-}
-
-.prod-single{
-    display: flex;
-
-}
-
-
-
-.foto-single img{
-    margin-right: 2rem;
-}
-
-.foto-single img{
-    width: 400px;
-    height: 400px;
-    object-fit: cover;
-    box-sizing: border-box;
-    overflow: hidden;
 }
 
 img{

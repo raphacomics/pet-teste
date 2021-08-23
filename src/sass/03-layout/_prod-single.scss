@@ -1,0 +1,23 @@
+
+.prod-single{
+    display: flex;
+
+}
+
+.single-preco{
+    color: $primary;
+    font-weight: 300;
+
+    &::before{
+        content: 'R$ ';
+        font-size: medium;
+    }
+}
+
+.foto-single img{
+    width: 100%;
+    max-height: 600px;
+    object-fit: cover;
+    box-sizing: border-box;
+    overflow: hidden;
+}

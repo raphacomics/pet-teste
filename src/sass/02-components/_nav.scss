@@ -1,8 +1,8 @@
 .header{
-    position: absolute;
+    //position: absolute;
     width: 100%;
-
-    height: 80px;
+    background-color: $primary;
+    //height: 80px;
     top: 0;
     left: 0;
 }
@@ -23,6 +23,7 @@
         width: auto;
     }
 }
+
 
 .menu{
     display: flex;
