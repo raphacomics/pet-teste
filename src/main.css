@@ -367,6 +367,12 @@ img {
   display: flex;
 }
 
+.prod-single p {
+  font-weight: 300;
+  line-height: 1.5rem;
+  margin-bottom: 2rem;
+}
+
 .single-preco {
   color: #0267ba;
   font-weight: 300;
