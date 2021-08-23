@@ -1,0 +1,13 @@
+---
+title: Mais Vendidos
+pagination:
+  data: collections.favoritos
+  size: 4
+  alias: favs
+---
+
+<ol>
+{% for favorito in favoritos %}
+  <li><a href="{{ prods.url | url }}">{{ prods.data.nome }}</a></li>
+{% endfor %}
+</ol>
