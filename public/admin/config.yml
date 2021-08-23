@@ -3,12 +3,8 @@ backend:
   repo: raphacomics/pet-teste
   branch: main
 
-
-
-
 media_folder: "public/assets/fotos"
 public_folder: "/assets/fotos"
-
 
 collections:
   - name: "produtos"
@@ -16,11 +12,11 @@ collections:
     folder: "src/produtos"
     create: true
     slug: "{{nome}}"
-    fields: 
+    fields:
       - { lable: "Nome Produto", name: "nome", widget: "string" }
       - { lable: "Preço", name: "preco", widget: "number" }
       - { lable: "Foto", name: "fotoProd", widget: "image" }
-      - { label: 'Descricao', name: 'body', widget: 'markdown' }
+      - { lable: "Opção Nome", name: "opcaoNome", widget: "string" }
+      - { lable: "Opções", name: "opcoes", widget: "list" }
+      - { label: "Descricao", name: "body", widget: "markdown" }
       - { lable: "Tags", name: "tags", widget: "list", default: ["prods"] }
-        
-

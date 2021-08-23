@@ -14,17 +14,22 @@ layout: 'base.njk'
             <h1>{{ nome }}</h1>
             <h3 class="single-preco">{{ preco }}</h3>
             <hr>
+
+
             <div>
                 <h5>{{opcaoNome}}</h5>
-                
+                {% if opcoes %}
                     <select>
-                        {% for opcoes in collections.prods.opcoes %}
+                        {% for opcoes in opcoes %}
                         <option value="{{opcoes}}">{{opcoes}}</option>
+
                         {%- endfor -%}
                     </select>
-                
-
+                {% endif %}
             </div>
+
+
+
             <div class='single-desc mt-4'>
                 <h4>Descrição</h4>
             </div>
