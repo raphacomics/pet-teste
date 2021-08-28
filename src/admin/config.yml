@@ -13,10 +13,10 @@ collections:
     create: true
     slug: "{{nome}}"
     fields:
-      - { lable: "Nome Produto", name: "nome", widget: "string" }
-      - { lable: "Preço", name: "preco", widget: "number" }
-      - { lable: "Foto", name: "fotoProd", widget: "image" }
-      - { lable: "Opção Nome", name: "opcaoNome", widget: "string" }
-      - { lable: "Variaçoes", name: "opcoes", widget: "list" }
+      - { label: "Nome Produto", name: "nome", widget: "string" }
+      - { label: "Preço", name: "preco", widget: "number" }
+      - { label: "Foto", name: "fotoProd", widget: "image" }
+      - { label: "Variaçao Titulo", name: "opcaoNome", widget: "string" }
+      - { label: "Variaçoes", name: "opcoes", widget: "list" }
       - { label: "Descricao", name: "body", widget: "markdown" }
-      - { lable: "Tags", name: "tags", widget: "list", default: ["prods"] }
+      - { label: "Tags", name: "tags", widget: "list", default: ["prods"] }
