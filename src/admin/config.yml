@@ -17,6 +17,6 @@ collections:
       - { lable: "Preço", name: "preco", widget: "number" }
       - { lable: "Foto", name: "fotoProd", widget: "image" }
       - { lable: "Opção Nome", name: "opcaoNome", widget: "string" }
-      - { lable: "Opções", name: "opcoes", widget: "list" }
+      - { lable: "Variaçoes", name: "opcoes", widget: "list" }
       - { label: "Descricao", name: "body", widget: "markdown" }
       - { lable: "Tags", name: "tags", widget: "list", default: ["prods"] }
