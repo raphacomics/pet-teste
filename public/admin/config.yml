@@ -20,6 +20,9 @@ collections:
           name: "variacao",
           widget: "relation",
           collection: "Variações",
+          valueField: slug
+          searchFields: ['variacao']
+          displayFields: ['variacao']
         }
       - { label: "Foto", name: "fotoProd", widget: "image" }
       - { label: "Variaçao Titulo", name: "opcaoNome", widget: "string" }
@@ -31,6 +34,6 @@ collections:
     label: "Variações"
     folder: "src/variacoes"
     create: true
-    slug: "{{name}}"
+    slug: "{{variacao}}"
     fields:
       - { label: "Variação", name: "variacao", widget: "string" }
