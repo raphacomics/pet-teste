@@ -14,6 +14,7 @@ collections:
     slug: "{{variacao}}"
     fields:
       - { label: "Variação", name: "variacaoTipo", widget: "string" }
+      - { label: "Tags", name: "tags", widget: "list", default: ["varia"] }
 
   - name: "produtos"
     label: "Produtos"
