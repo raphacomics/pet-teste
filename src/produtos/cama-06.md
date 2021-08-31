@@ -3,8 +3,8 @@ opcaoNome: Cores
 descricao: Lorem Ipsum
 nome: Cama Bóia
 varia:
-  - Teste
-  - Tamanhos
+  - Testando
+  - Tamamhos
 preco: 2500
 fotoProd: /assets/fotos/dog08.jpg
 opcoes:
