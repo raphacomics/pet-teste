@@ -15,15 +15,14 @@ collections:
     fields:
       - { label: "Nome Produto", name: "nome", widget: "string" }
       - { label: "Preço", name: "preco", widget: "number" }
-      - {
-          label: "Variação",
-          name: "variacao",
-          widget: "relation",
-          collection: "Variações",
-          valueField: slug
-          searchFields: ['variacao']
-          displayFields: ['variacao']
-        }
+      - label: "Variação",
+        name: "variacao",
+        widget: "relation",
+        collection: "Variações",
+        valueField: slug
+        searchFields: ['variacao']
+        displayFields: ['variacao']
+        
       - { label: "Foto", name: "fotoProd", widget: "image" }
       - { label: "Variaçao Titulo", name: "opcaoNome", widget: "string" }
       - { label: "Variaçoes", name: "opcoes", widget: "list" }
