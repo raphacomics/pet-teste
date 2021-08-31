@@ -1,0 +1,5 @@
+---
+variacaoTipo: Testando
+tags:
+  - varia
+---
