@@ -20,3 +20,11 @@ collections:
       - { label: "Variaçoes", name: "opcoes", widget: "list" }
       - { label: "Descricao", name: "body", widget: "markdown" }
       - { label: "Tags", name: "tags", widget: "list", default: ["prods"] }
+
+  - name: "Variações"
+    label: "Variações"
+    folder: "src/variacoes"
+    create: true
+    slug: "{{name}}"
+    fields:
+      - { label: "Variação", name: "variacao", widget: "string" }

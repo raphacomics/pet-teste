@@ -16,7 +16,18 @@ layout: 'base.njk'
             <hr>
 
 
-            <div>
+            
+
+
+
+            <div class='single-desc mt-4'>
+                <h5>Descrição</h5>
+            </div>
+            {{ content | safe }}
+
+            
+
+            <div class="mb-5">
                 <h5>{{opcaoNome}}</h5>
                 {% if opcoes %}
                     <select>
@@ -27,15 +38,6 @@ layout: 'base.njk'
                     </select>
                 {% endif %}
             </div>
-
-
-
-            <div class='single-desc mt-4'>
-                <h4>Descrição</h4>
-            </div>
-            {{ content | safe }}
-
-            <hr>
             
             <button class="btn btn-lg b-yellow">Comprar</button>
         </div>
