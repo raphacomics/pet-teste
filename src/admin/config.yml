@@ -31,6 +31,7 @@ collections:
       - { label: "Tags", name: "tags", widget: "list", default: ["prods"] }
 
       - widget: "relation"
+        collection: "Variações"
         name: "varia"
         label: "Escolha Variações"
         required: false
