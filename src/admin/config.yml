@@ -15,6 +15,12 @@ collections:
     fields:
       - { label: "Nome Produto", name: "nome", widget: "string" }
       - { label: "Preço", name: "preco", widget: "number" }
+      - {
+          label: "Variação",
+          name: "variacao",
+          widget: "relation",
+          collection: "Variações",
+        }
       - { label: "Foto", name: "fotoProd", widget: "image" }
       - { label: "Variaçao Titulo", name: "opcaoNome", widget: "string" }
       - { label: "Variaçoes", name: "opcoes", widget: "list" }
