@@ -9,7 +9,7 @@ public_folder: "/assets/fotos"
 collections:
   - name: "Variações"
     label: "Variações"
-    folder: "src/variacoes"
+    folder: "src/produtos/variacoes"
     create: true
     slug: "{{variacao}}"
     fields:
