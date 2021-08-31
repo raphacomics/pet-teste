@@ -1,0 +1,5 @@
+---
+variacaoTipo: Tamamhos
+tags:
+  - varia
+---
