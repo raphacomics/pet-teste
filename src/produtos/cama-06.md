@@ -1,9 +1,12 @@
 ---
-nome: Cama Bóia
+opcaoNome: Cores
 descricao: Lorem Ipsum
+nome: Cama Bóia
+varia:
+  - Teste
+  - Tamanhos
 preco: 2500
 fotoProd: /assets/fotos/dog08.jpg
-opcaoNome: Cores
 opcoes:
   - teste
   - teste01
