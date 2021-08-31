@@ -38,3 +38,9 @@ collections:
       - { label: "Variaçoes", name: "opcoes", widget: "list" }
       - { label: "Descricao", name: "body", widget: "markdown" }
       - { label: "Tags", name: "tags", widget: "list", default: ["prods"] }
+      - label: "City"
+        name: "airport-code"
+        widget: "select"
+        options:
+          - { label: "Chicago", value: "ORD" }
+          - { label: "Paris", value: "CDG" }
