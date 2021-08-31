@@ -11,7 +11,7 @@ collections:
     label: "Variações"
     folder: "src/produtos/variacoes"
     create: true
-    slug: "{{variacao}}"
+    slug: "{{variacaoTipo}}"
     fields:
       - { label: "Variação", name: "variacaoTipo", widget: "string" }
       - { label: "Tags", name: "tags", widget: "list", default: ["varia"] }
