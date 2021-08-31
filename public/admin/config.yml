@@ -23,13 +23,6 @@ collections:
     slug: "{{nome}}"
     fields:
       - { label: "Nome Produto", name: "nome", widget: "string" }
-      - { label: "Preço", name: "preco", widget: "number" }
-      - { label: "Foto", name: "fotoProd", widget: "image" }
-      - { label: "Variaçao Titulo", name: "opcaoNome", widget: "string" }
-      - { label: "Variaçoes", name: "opcoes", widget: "list" }
-      - { label: "Descricao", name: "body", widget: "markdown" }
-      - { label: "Tags", name: "tags", widget: "list", default: ["prods"] }
-
       - widget: "relation"
         collection: "Variações"
         name: "varia"
@@ -39,3 +32,9 @@ collections:
         valueField: "slug"
         searchFields: ["variacaoTipo"]
         displayFields: ["variacaoTipo"]
+      - { label: "Preço", name: "preco", widget: "number" }
+      - { label: "Foto", name: "fotoProd", widget: "image" }
+      - { label: "Variaçao Titulo", name: "opcaoNome", widget: "string" }
+      - { label: "Variaçoes", name: "opcoes", widget: "list" }
+      - { label: "Descricao", name: "body", widget: "markdown" }
+      - { label: "Tags", name: "tags", widget: "list", default: ["prods"] }
