@@ -16,5 +16,7 @@ opcoes:
 tags:
   - prods
   - favoritos
+  - varia
 ---
+
 teste 02 Slug
