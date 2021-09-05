@@ -1,8 +1,10 @@
 ---
 opcaoNome: Cores
 descricao: Lorem Ipsum
+airport-code: ORD
 nome: Cama Bóia
-varia: []
+varia:
+  - Tamamhos
 preco: 2500
 fotoProd: /assets/fotos/dog08.jpg
 opcoes:
@@ -13,6 +15,5 @@ opcoes:
 tags:
   - prods
   - favoritos
-airport-code: ORD
 ---
 teste 02 Slug
