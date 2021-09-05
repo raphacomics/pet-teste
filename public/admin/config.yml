@@ -31,7 +31,7 @@ collections:
         required: false
         multiple: true
         valueField: "variacaoTipo"
-        searchFields: ["variacaoTipo"]
+        searchFields: ["variacaoTitle"]
         displayFields: ["variacaoTipo"]
       - { label: "Preço", name: "preco", widget: "number" }
       - { label: "Foto", name: "fotoProd", widget: "image" }
