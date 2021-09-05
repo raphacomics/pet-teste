@@ -1,6 +1,9 @@
 ---
 variacaoTitle: Teste
-variacaoTipo: Testando
+variacaoTipo:
+  - Testando
+  - testando2
+  - testenadp3
 tags:
   - varia
 ---
