@@ -30,9 +30,9 @@ collections:
         label: "Escolha Variações"
         required: false
         multiple: true
-        valueField: "varia.variacaoTipo"
+        valueField: "variacaoTipo"
         searchFields: ["variacaoTitle"]
-        displayFields: ["varia.variacaoTipo"]
+        displayFields: ["variacaoTipo"]
       - { label: "Preço", name: "preco", widget: "number" }
       - { label: "Foto", name: "fotoProd", widget: "image" }
       - { label: "Variaçao Titulo", name: "opcaoNome", widget: "string" }
