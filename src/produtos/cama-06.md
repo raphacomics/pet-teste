@@ -5,6 +5,7 @@ airport-code: ORD
 nome: Cama Bóia
 varia:
   - Tamamhos
+  - Teste
 preco: 2500
 fotoProd: /assets/fotos/dog08.jpg
 opcoes:
