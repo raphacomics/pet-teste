@@ -1,7 +1,12 @@
 ---
 nome: Bolsa de Transporte Sling
+varia:
+  - - Grande
+    - Medio
+    - Pequeno
 preco: 200
 fotoProd: /assets/fotos/akira.jpg
+opcaoNome: eita
 tags:
   - prods
   - favoritos
