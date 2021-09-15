@@ -26,13 +26,22 @@ collections:
       - { label: "Nome Produto", name: "nome", widget: "string" }
       - widget: "relation"
         collection: "Variações"
+        name: "variaTitle"
+        label: "Titulo Variacao"
+        required: false
+        multiple: true
+        valueField: "variacaoTitle"
+        searchFields: ["variacaoTitle"]
+        displayFields: ["variacaoTitle"]
+      - widget: "relation"
+        collection: "Variações"
         name: "varia"
         label: "Escolha Variações"
         required: false
         multiple: true
         valueField: "variacaoTipo"
-        searchFields: ["variacaoTitle"]
-        displayFields: ["variacaoTitle", "variacaoTipo"]
+        searchFields: ["variacaoTipo"]
+        displayFields: ["variacaoTipo"]
       - { label: "Preço", name: "preco", widget: "number" }
       - { label: "Foto", name: "fotoProd", widget: "image" }
       - { label: "Variaçao Titulo", name: "opcaoNome", widget: "string" }
