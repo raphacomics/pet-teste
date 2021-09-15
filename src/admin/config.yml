@@ -39,7 +39,7 @@ collections:
         label: "Escolha Variações"
         required: false
         multiple: true
-        valueField: "variacaoTipo"
+        valueField: "variacaoTipo.*"
         searchFields: ["variacaoTitle"]
         displayFields: ["variacaoTitle"]
       - { label: "Preço", name: "preco", widget: "number" }

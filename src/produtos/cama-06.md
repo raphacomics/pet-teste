@@ -6,9 +6,9 @@ nome: Cama Bóia
 variaTitle:
   - Tamamhos
 varia:
-  - - Grande
-    - Medio
-    - Pequeno
+  - Grande
+  - Medio
+  - Pequeno
 preco: 2500
 fotoProd: /assets/fotos/dog08.jpg
 opcoes:
