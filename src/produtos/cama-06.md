@@ -3,10 +3,12 @@ opcaoNome: Cores
 descricao: Lorem Ipsum
 airport-code: ORD
 nome: Cama Bóia
+variaTitle:
+  - Tamamhos
 varia:
-  - Testando
-  - testando2
-  - testenadp3
+  - - Grande
+    - Medio
+    - Pequeno
 preco: 2500
 fotoProd: /assets/fotos/dog08.jpg
 opcoes:
