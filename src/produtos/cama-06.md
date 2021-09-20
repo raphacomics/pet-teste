@@ -4,11 +4,11 @@ descricao: Lorem Ipsum
 airport-code: ORD
 nome: Cama Bóia
 variaTitle:
-  - Tamamhos
+  - Teste
 varia:
-  - Grande
-  - Medio
-  - Pequeno
+  - Testando
+  - testando2
+  - testenadp3
 preco: 2500
 fotoProd: /assets/fotos/dog08.jpg
 opcoes:
