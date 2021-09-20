@@ -40,8 +40,8 @@ collections:
         required: false
         multiple: true
         valueField: "variacaoTipo.*"
-        searchFields: ["variacaoTitle"]
-        displayFields: ["variacaoTitle"]
+        searchFields: ["variacaoTipo"]
+        displayFields: ["variacaoTipo"]
       - { label: "Preço", name: "preco", widget: "number" }
       - { label: "Foto", name: "fotoProd", widget: "image" }
       - { label: "Variaçao Titulo", name: "opcaoNome", widget: "string" }
