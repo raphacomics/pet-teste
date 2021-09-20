@@ -32,7 +32,7 @@ collections:
         multiple: true
         valueField: "variacaoTitle"
         searchFields: ["variacaoTitle"]
-        displayFields: ["variacaoTitle"]
+        displayFields: ["variacaoTitle", "variacaoTipo"]
       - widget: "relation"
         collection: "Variações"
         name: "varia"
