@@ -18,7 +18,7 @@ collections:
         name: "variacao"
         widget: "list"
         fields:
-          - { label: "Variacoes", name: "variacoesLista", widget: "string" }
+          - { label: "Variacoes", name: "variacoesLista", widget: "list" }
 
   - name: "produtos"
     label: "Produtos"
@@ -33,7 +33,7 @@ collections:
         label: "Escolha Variações"
         required: false
         multiple: true
-        valueField: "variacoesLista"
+        valueField: "variacao.variacoesLista"
         searchFields: ["nomeVaria"]
         displayFields: ["nomeVaria"]
       - { label: "Preço", name: "preco", widget: "number" }
