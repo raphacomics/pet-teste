@@ -6,9 +6,9 @@ nome: Cama Bóia
 variaTitle:
   - Teste
 varia:
-  - Testando
-  - testando2
-  - testenadp3
+  - testing
+  - varia
+  - nossa
 preco: 2500
 fotoProd: /assets/fotos/dog08.jpg
 opcoes:
