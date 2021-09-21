@@ -1,7 +1,9 @@
 ---
 nome: Rapha Teste
 varia:
-  - Opa Varia 02
+  - - grande
+    - pequqno
+    - medio
 preco: 100
 fotoProd: /assets/fotos/dog06.jpg
 opcaoNome: outra variacao
