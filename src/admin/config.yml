@@ -9,7 +9,7 @@ public_folder: "/assets/fotos"
 collections:
   - name: "variacoes"
     label: "Variações"
-    folder: "src/variacoes"
+    folder: "src/produtos/variacoes"
     create: true
     slug: "{{nomeVaria}}"
     fields:
@@ -18,7 +18,7 @@ collections:
         name: "variacao"
         widget: "list"
         fields:
-          - { label: "Variacoes", name: "variacoesOpt", widget: "string" }
+          - { label: "Variacoes", name: "variacoesLista", widget: "string" }
 
   - name: "produtos"
     label: "Produtos"
@@ -35,7 +35,7 @@ collections:
         multiple: true
         valueField: "nomeVaria"
         searchFields: ["nomeVaria"]
-        displayFields: ["nomeVaria", "variacao.*.variacoesOpt"]
+        displayFields: ["nomeVaria"]
       - { label: "Preço", name: "preco", widget: "number" }
       - { label: "Foto", name: "fotoProd", widget: "image" }
       - { label: "Variaçao Titulo", name: "opcaoNome", widget: "string" }
