@@ -9,13 +9,20 @@ public_folder: "/assets/fotos"
 collections:
   - name: "variacoes"
     label: "Variações"
-    folder: "src/produtos/variacoes"
+    folder: "src/variacoes"
     create: true
-    slug: "{{variacaoTitle}}"
+    slug: "{{variacaoTitulo}}"
     fields:
-      - { label: "Variação Titulo", name: "variacaoTitle", widget: "string" }
-      - { label: "Variação", name: "variacaoTipo", widget: "list" }
-      - { label: "Tags", name: "tags", widget: "list", default: ["varia"] }
+      - label: "Variação"
+        name: "variacaos"
+        widget: "list"
+        fields:
+          - {
+              label: "Variação Titulo",
+              name: "variacaoTitulo",
+              widget: "string",
+            }
+          - { label: "Variações", name: "variacaoTipo", widget: "list" }
 
   - name: "produtos"
     label: "Produtos"
@@ -26,22 +33,13 @@ collections:
       - { label: "Nome Produto", name: "nome", widget: "string" }
       - widget: "relation"
         collection: "variacoes"
-        name: "variaTitle"
-        label: "Titulo Variacao"
-        required: false
-        multiple: true
-        valueField: "variacaoTitle"
-        searchFields: ["variacaoTitle"]
-        displayFields: ["variacaoTitle"]
-      - widget: "relation"
-        collection: "variacoes"
         name: "varia"
         label: "Escolha Variações"
         required: false
         multiple: false
         valueField: "variacaoTipo"
-        searchFields: ["variacaoTitle"]
-        displayFields: ["variacaoTipo.*"]
+        searchFields: ["variacaoTitulo"]
+        displayFields: ["variacaoTitulo", "variacaoTipo.*"]
       - { label: "Preço", name: "preco", widget: "number" }
       - { label: "Foto", name: "fotoProd", widget: "image" }
       - { label: "Variaçao Titulo", name: "opcaoNome", widget: "string" }
