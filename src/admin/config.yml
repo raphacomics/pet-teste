@@ -11,18 +11,14 @@ collections:
     label: "Variações"
     folder: "src/variacoes"
     create: true
-    slug: "{{variacaoTitulo}}"
+    slug: "{{nomeVaria}}"
     fields:
+      - { label: "Nome Variacao", name: "nomeVaria", widget: "string" }
       - label: "Variação"
-        name: "variacaos"
+        name: "variacao"
         widget: "list"
         fields:
-          - {
-              label: "Variação Titulo",
-              name: "variacaoTitulo",
-              widget: "string",
-            }
-          - { label: "Variações", name: "variacaoTipo", widget: "list" }
+          - { label: "Variacoes", name: "variacoesOpt", widget: "string" }
 
   - name: "produtos"
     label: "Produtos"
@@ -36,10 +32,10 @@ collections:
         name: "varia"
         label: "Escolha Variações"
         required: false
-        multiple: false
-        valueField: "variacaoTipo"
-        searchFields: ["variacaoTitulo"]
-        displayFields: ["variacaoTitulo", "variacaoTipo.*"]
+        multiple: true
+        valueField: "nomeVaria"
+        searchFields: ["nomeVaria"]
+        displayFields: ["nomeVaria", "variacao.*.variacoesOpt"]
       - { label: "Preço", name: "preco", widget: "number" }
       - { label: "Foto", name: "fotoProd", widget: "image" }
       - { label: "Variaçao Titulo", name: "opcaoNome", widget: "string" }
