@@ -35,7 +35,7 @@ collections:
         multiple: true
         valueField: "nomeVaria"
         searchFields: ["nomeVaria"]
-        displayFields: ["nomeVaria", "variacao"]
+        displayFields: ["nomeVaria", "variacao.*"]
       - { label: "Preço", name: "preco", widget: "number" }
       - { label: "Foto", name: "fotoProd", widget: "image" }
       - { label: "Variaçao Titulo", name: "opcaoNome", widget: "string" }
