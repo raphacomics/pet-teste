@@ -7,7 +7,7 @@ media_folder: "public/assets/fotos"
 public_folder: "/assets/fotos"
 
 collections:
-  - name: "Variacoes"
+  - name: "variacoes"
     label: "Variações"
     folder: "src/produtos/variacoes"
     create: true
