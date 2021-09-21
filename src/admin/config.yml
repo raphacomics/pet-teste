@@ -25,7 +25,7 @@ collections:
     fields:
       - { label: "Nome Produto", name: "nome", widget: "string" }
       - widget: "relation"
-        collection: "Variações"
+        collection: "variacoes"
         name: "variaTitle"
         label: "Titulo Variacao"
         required: false
@@ -34,7 +34,7 @@ collections:
         searchFields: ["variacaoTitle"]
         displayFields: ["variacaoTitle"]
       - widget: "relation"
-        collection: "Variações"
+        collection: "variacoes"
         name: "varia"
         label: "Escolha Variações"
         required: false
