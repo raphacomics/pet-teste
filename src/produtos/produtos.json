@@ -1,4 +1,4 @@
 {
     "layout": "produto-single.njk",
-    "tags": "prods, varia"
+    "tags": ["prods", "varia"]
 }
